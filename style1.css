@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Barrio|Bubbler+One|Cinzel|Dancing+Script|El+Messiri|Lobster|Montserrat+Subrayada|Montserrat:900|Pacifico');
+/********************
+    Declare CSS Variables
+********************/
+
+:root {
+	/* Image Variables */ 
+	--background-color: #151515;
+	--image-opacity: 1;
+	--border-color: #5092c7;
+	--border-width: 0px;
+	--border-radius: 0px;
+	--inner-border-radius: 0%;
+	--border-styles: solid;
+	
+	--blurr: 0px;
+	--greyscale: 0%;
+	--brightness: 100%;
+	--contrast: 100%;
+	
+	--invert: 0%;
+	--opacity: 100%;
+	--saturate: 100%;
+	
+	
+	
+	
+	
+
+	
+	
+}
+
+/********************
+    General Body
+********************/
+
+
+body {
+	text-align: center;
+	margin: auto;
+	background: url('https://media.istockphoto.com/photos/nautilus-blue-background-picture-id905432958?b=1&k=20&m=905432958&s=170667a&w=0&h=SKLefLqaFNHt3wUp-L82DKA6yclLhXPKSMgEZbTITrs=') no-repeat center center/cover;
+	
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 12px;
+	min-height: 1050px;  
+	overflow:hidden;     
+	display: inline;   
+	place-items: center;             
+}
+.container{
+	
+	margin-left: 400px;
+	height:500px;
+	width:500px;
+	padding-top: 30px;
+	
+}
+.container .wrapper
+{
+	position:relative;
+	height:300px;
+	width:100%;
+	border:2px solid black;
+	display:flex;
+	background-color: black;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.container #custom-btn{
+	margin-top:20px;
+	margin-right:30px;
+	padding:4px 4px;
+	border: 2px solid ;
+	border-radius: 6px;
+	text-decoration: solid;
+	cursor: pointer;
+	font-weight: bold;
+	
+}
+.container #custom-btn:hover{
+	background-color: rgb(107, 106, 106);
+}
+.container #save-img{
+	margin-top:20px;
+	padding:4px 4px;
+	border: 2px solid ;
+	border-radius: 6px;
+	text-decoration: solid;
+	cursor: pointer;
+	font-weight: bold;
+}
+.container #save-img:hover{
+	background-color: rgb(107, 106, 106);
+}
+.wrapper .image{
+	flex-grow: 1;
+	display: flex;
+	overflow: hidden;
+	margin-left: 20px;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: center;
+}
+
+.image img{
+
+max-width: 490px;
+  max-height: 335px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 40px !important;
+    padding-bottom: 10px;
+	color: white;
+	margin-left: 100px;;
+}
+.actions-bar{
+	margin-left:100px;
+	padding-bottom: 10px;
+}
+
+.top-div {
+	width: 1070px;
+	margin: auto;
+	margin-left: 70px;
+	margin-top: 80px;
+}
+
+.right-div {
+	position: fixed;
+	overflow-y: hidden;
+	left: calc(100vw - 385px);
+	right:0px;
+	z-index: 20;
+	height: 919px; 
+    padding-top: 40px;
+    padding-left: 30px;
+    top: 0px;
+    background-color: #333;
+    border-left: 1px solid #222;
+}
+
+.bottom-div {
+	
+	
+	margin:auto;
+	
+}
+
+p {
+	font-size: 18px;
+	color: var(--border-color);
+	text-align: left;
+}
+
+.highlight {
+    color: var(--border-color);
+	left:400px;
+}
+
+ /********************
+    Apply Variables
+********************/   
+
+#image, #image-2 ,img{
+	max-height: 400px;
+	max-width: 900px;
+	position: relative;
+	overflow: hidden;
+    margin: auto;
+    vertical-align: middle;
+	
+	border-color: var(--border-color);
+	
+	
+				
+	filter: blur(var(--blurr))
+			grayscale(var(--greyscale))
+			brightness(var(--brightness))
+			contrast(var(--contrast))
+			
+			invert(var(--invert))
+			opacity(var(--opacity))
+			saturate(var(--saturate));
+			
+}
+
+#image-full-size #image-2 {
+	max-height: 1080px;
+	max-width: 1920px;
+}
+    
+/*  */
+
+ 
+
+#image-full-size  {
+	display: none;
+	position: absolute;
+	overflow: scroll;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	z-index: 1000;
+	background-image: url('bg.png');
+	padding-right: 100px;
+}
+
+#full-size {
+	position: relative;
+	left: -255px;
+	margin-right: 20px;
+}*/
+
+
+
+
+
+/*BUTTONS*/
+.rotate .options{
+display:inline flex;
+}
+.rotate .options button{
+	border:2px solid white;
+	border-radius: 2px;
+	margin-left:8px;
+	width:40px;
+	height:40px;
+}
+.rotate .options button:hover{
+	background-color: rgb(129, 127, 127);
+}
+
+
+ 
+
+ /********************
+    Slider and Text Box Styling
+********************/   
+
+
+.sliders {
+	display: block;
+	margin: 5px 0;
+	text-align: left;
+}
+
+.cp-app {
+	z-index:250;
+}
+
+
+
+input  {
+	text-align: center;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+
+label {
+	display: inline-block;
+	padding-left: 0;
+	width: 100px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 150px;
+    border-radius: 8px;
+    height: 4px;
+    background-color: #777; 
+}
+
+input[type=range]::-moz-range-track {
+    -webkit-appearance: none;
+    width: 150px;
+    border-radius: 8px;
+    height: 3px;
+    background-color: #777; 
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #444;
+    border: 1px solid #bdc3c7;;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type='range']::-moz-range-thumb {
+    -webkit-appearance: none;
+    background-color: #444;
+    border: 1px solid #bdc3c7;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.radio-div {
+	display: inline-block;
+	width: 30%;
+	text-align: left;
+	cursor: pointer;
+}
+
+
+
+.button:focus {
+	outline: none;
+	background-color: #333;
+}
+
+.button {
+	font-family:  'Ubuntu', sans-serif;
+	background-color: #444;
+	border: 1px solid #222;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #ededed;
+	cursor: pointer;
+	margin: 10px auto;
+	transition: 0.3s;
+}
+
+.button:hover {
+	background-color: rgb(38, 34, 34);
+}
+
+.controls {
+	margin-bottom: 50px;
+}
+
+.search-box {
+    font-size: 1.3em;
+    margin: 20px auto 0 auto;
+}
+
+#input-box {
+	width: 300px;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+#submit {
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+
+
+
+#reset-all {
+	display: inline-block;
+	margin: auto;
+	margin-top: 30px;
+	padding:8px 8px;
+	width:100px;
+	font-weight: bold;
+}
+
+
+
+.fonts {
+	margin-top: -25px;
+}
+
+
+  /*responsive*/
+  @media screen and (max-width: 500px) {
+	.controls button{
+	  width: 100%;
+	  margin-bottom: 10px;
+	}
+	.controls .row{
+	  width: 100%;
+	}
+	.controls .row .save-img{
+	  margin-left: 0px;
+	}
+  }
